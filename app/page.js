@@ -69,18 +69,18 @@ export default function Home() {
   ]
 
   const skills = [
-    'SIEM & EDR/XDR',
-    'Incident Response',
-    'Cloud Security',
-    'OT/IoT Security',
-    'Cortex XDR/XSIAM',
-    'Team Leadership',
-    'Network Security',
-    'Vulnerability Management',
-    'Identity & Access',
-    'Security Governance',
-    'Threat Detection',
-    'Vendor Management'
+    { name: 'SIEM & EDR/XDR', icon: '🛡️' },
+    { name: 'Incident Response', icon: '🔍' },
+    { name: 'Cloud Security', icon: '☁️' },
+    { name: 'OT/IoT Security', icon: '⚙️' },
+    { name: 'Cortex XDR/XSIAM', icon: '🔧' },
+    { name: 'Team Leadership', icon: '👥' },
+    { name: 'Network Security', icon: '🌐' },
+    { name: 'Vulnerability Management', icon: '⚠️' },
+    { name: 'Identity & Access', icon: '🔐' },
+    { name: 'Security Governance', icon: '📋' },
+    { name: 'Threat Detection', icon: '🎯' },
+    { name: 'Vendor Management', icon: '🤝' }
   ]
 
   return (
@@ -105,6 +105,30 @@ export default function Home() {
           <div className="hero-cta">
             <a href="#contact" className="cta-button">Download Resume</a>
             <a href="#experience" className="cta-secondary">View Experience</a>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats */}
+      <section className="stats">
+        <div className="section-container">
+          <div className="stats-grid">
+            <div className="stat-card">
+              <p className="stat-number">14+</p>
+              <p className="stat-label">Years in Cybersecurity</p>
+            </div>
+            <div className="stat-card">
+              <p className="stat-number">5+</p>
+              <p className="stat-label">Team Members Led</p>
+            </div>
+            <div className="stat-card">
+              <p className="stat-number">100+</p>
+              <p className="stat-label">Incident Responses</p>
+            </div>
+            <div className="stat-card">
+              <p className="stat-number">4</p>
+              <p className="stat-label">Major Platforms</p>
+            </div>
           </div>
         </div>
       </section>
@@ -165,7 +189,10 @@ export default function Home() {
           <h2>Skills & Expertise</h2>
           <div className="skills-grid">
             {skills.map((skill, idx) => (
-              <div key={idx} className="skill-tag">{skill}</div>
+              <div key={idx} className="skill-tag">
+                <div className="skill-icon">{skill.icon}</div>
+                <div className="skill-name">{skill.name}</div>
+              </div>
             ))}
           </div>
         </div>

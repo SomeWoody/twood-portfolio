@@ -24,6 +24,7 @@ h1 {
   line-height: 1.1;
   color: #f1f5f9;
   margin-bottom: 1rem;
+  animation: fadeInDown 0.8s ease;
 }
 
 h2 {
@@ -54,6 +55,40 @@ a {
 
 a:hover {
   color: #0d9488;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* Site Wrapper */
@@ -128,12 +163,14 @@ a:hover {
   color: #cbd5e1;
   margin-bottom: 2.5rem;
   font-weight: 300;
+  animation: fadeInUp 0.8s ease 0.2s both;
 }
 
 .hero-cta {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  animation: fadeInUp 0.8s ease 0.4s both;
 }
 
 .cta-button,
@@ -156,6 +193,7 @@ a:hover {
 .cta-button:hover {
   background: #0d9488;
   transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(20, 184, 166, 0.2);
 }
 
 .cta-secondary {
@@ -166,6 +204,50 @@ a:hover {
 
 .cta-secondary:hover {
   background: rgba(20, 184, 166, 0.1);
+}
+
+/* Stats Section */
+.stats {
+  background: #0f172a;
+  padding: 3rem 2rem;
+  border-top: 1px solid rgba(20, 184, 166, 0.1);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: rgba(20, 184, 166, 0.1);
+  border: 1px solid rgba(20, 184, 166, 0.3);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.8s ease;
+}
+
+.stat-card:hover {
+  background: rgba(20, 184, 166, 0.15);
+  border-color: rgba(20, 184, 166, 0.5);
+  transform: translateY(-4px);
+}
+
+.stat-number {
+  font-size: 40px;
+  font-weight: 700;
+  color: #14b8a6;
+  margin: 0 0 0.5rem;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #cbd5e1;
+  margin: 0;
 }
 
 /* Section Container */
@@ -191,6 +273,7 @@ a:hover {
 
 .about p {
   margin-bottom: 1.5rem;
+  animation: fadeInUp 0.8s ease;
 }
 
 .education-box {
@@ -199,6 +282,12 @@ a:hover {
   border-radius: 0 8px 8px 0;
   padding: 1.5rem;
   margin-top: 2rem;
+  transition: all 0.2s ease;
+  animation: fadeInUp 0.8s ease 0.2s both;
+}
+
+.education-box:hover {
+  background: rgba(20, 184, 166, 0.15);
 }
 
 .edu-title {
@@ -216,6 +305,7 @@ a:hover {
 
 .about-image {
   text-align: center;
+  animation: fadeInUp 0.8s ease 0.1s both;
 }
 
 .about-image img {
@@ -223,6 +313,12 @@ a:hover {
   max-width: 300px;
   border-radius: 8px;
   border: 1px solid rgba(20, 184, 166, 0.2);
+  transition: all 0.3s ease;
+}
+
+.about-image img:hover {
+  border-color: rgba(20, 184, 166, 0.4);
+  transform: scale(1.02);
 }
 
 /* Experience Section */
@@ -238,6 +334,14 @@ a:hover {
   border-radius: 0 8px 8px 0;
   margin-bottom: 1.5rem;
   overflow: hidden;
+  transition: all 0.3s ease;
+  animation: slideInLeft 0.8s ease;
+}
+
+.experience-item:hover {
+  background: rgba(20, 184, 166, 0.15);
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.15);
 }
 
 .experience-header {
@@ -250,7 +354,7 @@ a:hover {
 }
 
 .experience-header:hover {
-  background: rgba(20, 184, 166, 0.15);
+  background: rgba(20, 184, 166, 0.05);
 }
 
 .experience-header h3 {
@@ -274,6 +378,7 @@ a:hover {
   background: rgba(20, 184, 166, 0.05);
   padding: 1.5rem;
   border-top: 1px solid rgba(20, 184, 166, 0.2);
+  animation: fadeInUp 0.3s ease;
 }
 
 .experience-details p {
@@ -309,12 +414,30 @@ a:hover {
   font-weight: 600;
   font-size: 13px;
   color: #f1f5f9;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  animation: fadeInUp 0.8s ease;
 }
 
 .skill-tag:hover {
   background: rgba(20, 184, 166, 0.25);
   border-color: rgba(20, 184, 166, 0.6);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(20, 184, 166, 0.15);
+}
+
+.skill-icon {
+  font-size: 28px;
+  margin-bottom: 0.75rem;
+  transition: transform 0.2s ease;
+}
+
+.skill-tag:hover .skill-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.skill-name {
+  font-size: 13px;
 }
 
 /* Contact Section */
@@ -333,6 +456,7 @@ a:hover {
   font-size: 16px;
   margin-bottom: 2rem;
   color: #cbd5e1;
+  animation: fadeInUp 0.8s ease;
 }
 
 .contact-methods {
@@ -353,12 +477,14 @@ a:hover {
   background: transparent;
   transition: all 0.2s ease;
   display: block;
+  animation: fadeInUp 0.8s ease;
 }
 
 .contact-link:hover {
   background: rgba(20, 184, 166, 0.15);
   color: #0d9488;
   border-color: #0d9488;
+  transform: translateY(-2px);
 }
 
 .contact-link[href^="mailto"],
@@ -392,6 +518,10 @@ a:hover {
 
   .tagline {
     font-size: 16px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .about-grid {
