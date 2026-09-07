@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import Image from 'next/image'
 
 export default function Home() {
   const [expandedRole, setExpandedRole] = useState(null)
@@ -10,7 +9,6 @@ export default function Home() {
     {
       id: 'supervisor',
       title: 'Cybersecurity Supervisor',
-      company: 'AAON, Inc.',
       period: 'Mar 2024 – Present',
       bullets: [
         'Lead and develop a team of cybersecurity analysts and engineers, establishing standards for operational excellence',
@@ -25,7 +23,6 @@ export default function Home() {
     {
       id: 'engineer',
       title: 'Cybersecurity Engineer',
-      company: 'AAON, Inc.',
       period: 'Jan 2022 – Mar 2024',
       bullets: [
         'Managed and maintained core security infrastructure including SIEM, EDR, IDS/IPS, PAM across IT and OT/IoT',
@@ -38,7 +35,6 @@ export default function Home() {
     {
       id: 'netadmin',
       title: 'Network Administrator',
-      company: 'AAON, Inc.',
       period: 'Apr 2020 – Jan 2022',
       bullets: [
         'Managed enterprise network infrastructure across multiple geographic locations',
@@ -50,7 +46,6 @@ export default function Home() {
     {
       id: 'dod2',
       title: 'Network Administrator',
-      company: 'Department of Defense',
       period: 'May 2019 – Nov 2019',
       bullets: [
         'Maintained and troubleshot network infrastructure supporting mission operations',
@@ -61,9 +56,9 @@ export default function Home() {
     {
       id: 'dod1',
       title: 'Tactical Signal Support Specialist',
-      company: 'U.S. Army (1st Battalion, 32nd Infantry Regiment, 10th Mountain Division)',
       period: 'May 2012 – Feb 2018',
       bullets: [
+        'U.S. Army | 1st Battalion, 32nd Infantry Regiment, 10th Mountain Division',
         'Supported over 400 users across Active Directory and enterprise network environments',
         'Maintained secure communications systems with zero data loss incidents',
         'Supervised a team of 10, ensuring operational continuity and network reliability',
@@ -74,23 +69,23 @@ export default function Home() {
   ]
 
   const skills = [
-    'Security Operations Leadership',
-    'SIEM & EDR/XDR Platforms',
-    'Incident Response & Threat Detection',
-    'Security Governance & Risk Management',
-    'Network Security (Firewalls, SD-WAN, NAC)',
-    'Cloud & Identity Security (Azure, Entra ID)',
-    'OT & IoT Security',
+    'SIEM & EDR/XDR',
+    'Incident Response',
+    'Cloud Security',
+    'OT/IoT Security',
     'Cortex XDR/XSIAM',
-    'Microsoft Security Stack',
-    'Vulnerability Management',
     'Team Leadership',
+    'Network Security',
+    'Vulnerability Management',
+    'Identity & Access',
+    'Security Governance',
+    'Threat Detection',
     'Vendor Management'
   ]
 
   return (
     <div className="site-wrapper">
-      {/* Header Navigation */}
+      {/* Header */}
       <header className="header">
         <nav className="nav-container">
           <div className="logo">Tyler Wood</div>
@@ -102,78 +97,69 @@ export default function Home() {
         </nav>
       </header>
 
-      {/* Hero Section */}
+      {/* Hero */}
       <section className="hero">
         <div className="hero-content">
-          <h1>Cybersecurity Leader <span className="veteran-badge">| U.S. Army Veteran</span></h1>
-          <p className="tagline">14+ years spanning U.S. Army Tactical Signal Support to enterprise security operations. Veteran-driven. Results-oriented. Building scalable security at AAON.</p>
+          <h1>Cybersecurity Leader</h1>
+          <p className="tagline">14+ years spanning U.S. Army Tactical Signal Support to enterprise security operations. Veteran-driven. Results-oriented. Building scalable security at scale.</p>
           <div className="hero-cta">
-            <a href="#contact" className="cta-button">Get in Touch</a>
+            <a href="#contact" className="cta-button">Download Resume</a>
             <a href="#experience" className="cta-secondary">View Experience</a>
           </div>
         </div>
       </section>
 
-      {/* About Section */}
+      {/* About */}
       <section id="about" className="about">
         <div className="section-container">
+          <h2>About</h2>
           <div className="about-grid">
-            <div className="about-content">
-              <h2>About</h2>
+            <div>
               <p>I'm a security leader with 14+ years of experience progressing from U.S. Army Tactical Signal Support through DoD network operations to enterprise security leadership.</p>
               <p>I drive security operations, governance, and team development. My focus is on delivering scalable, risk-aligned security solutions that support organizational growth and operational resilience.</p>
-              <p>I lead cross-functional security teams across enterprise, cloud, identity, and OT environments. I'm passionate about security operations excellence, developing talent, and translating complex security into business value.</p>
-              
-              <div className="credentials">
-                <div className="credential">
-                  <strong>Education</strong>
-                  <p>M.S. Cybersecurity (University of Tulsa, Dec 2025)<br />B.S. Information Technology, Cybersecurity & Digital Forensics (Oklahoma State University Institute of Technology, 2020)</p>
-                </div>
+              <p>I lead cross-functional security teams across enterprise, cloud, identity, and OT environments. Passionate about security operations excellence, developing talent, and translating complex security into business value.</p>
+              <div className="education-box">
+                <p className="edu-title">Education</p>
+                <p className="edu-detail">M.S. Cybersecurity, University of Tulsa (Dec 2025)</p>
+                <p className="edu-detail">B.S. Information Technology, Cybersecurity & Digital Forensics, Oklahoma State University Institute of Technology (2020)</p>
               </div>
             </div>
             <div className="about-image">
-              <div className="image-placeholder">
-                {/* Placeholder for photo - will need to upload actual image */}
-                <img src="/photo.jpg" alt="Tyler Wood" />
-              </div>
+              <img src="/photo.jpg" alt="Tyler Wood" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Experience Section */}
+      {/* Experience */}
       <section id="experience" className="experience">
         <div className="section-container">
           <h2>Experience</h2>
-          <div className="experience-list">
-            {roles.map((role) => (
-              <div key={role.id} className="experience-item">
-                <div 
-                  className="experience-header"
-                  onClick={() => setExpandedRole(expandedRole === role.id ? null : role.id)}
-                >
-                  <div>
-                    <h3>{role.title}</h3>
-                    <p className="company-info">{role.company} • {role.period}</p>
-                  </div>
-                  <span className="expand-icon">{expandedRole === role.id ? '−' : '+'}</span>
+          {roles.map((role) => (
+            <div key={role.id} className="experience-item">
+              <div 
+                className="experience-header"
+                onClick={() => setExpandedRole(expandedRole === role.id ? null : role.id)}
+              >
+                <div>
+                  <h3>{role.title}</h3>
+                  <p className="period">{role.period}</p>
                 </div>
-                {expandedRole === role.id && (
-                  <div className="experience-details">
-                    <ul>
-                      {role.bullets.map((bullet, idx) => (
-                        <li key={idx}>{bullet}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
+                <span className="expand-icon">{expandedRole === role.id ? '−' : '+'}</span>
               </div>
-            ))}
-          </div>
+              {expandedRole === role.id && (
+                <div className="experience-details">
+                  {role.bullets.map((bullet, idx) => (
+                    <p key={idx}>{bullet}</p>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
         </div>
       </section>
 
-      {/* Skills Section */}
+      {/* Skills */}
       <section className="skills">
         <div className="section-container">
           <h2>Skills & Expertise</h2>
@@ -185,37 +171,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* Contact */}
       <section id="contact" className="contact">
         <div className="section-container">
           <h2>Get In Touch</h2>
-          <div className="contact-content">
-            <p>Open to opportunities, consulting inquiries, and security conversations.</p>
-            <div className="contact-methods">
-              <a href="mailto:tylerwood_8@outlook.com" className="contact-link">tylerwood_8@outlook.com</a>
-              <a href="tel:+19183515161" className="contact-link">(918) 351-5161</a>
-              <a href="https://www.linkedin.com/in/tyler-wood-cyber" target="_blank" rel="noopener noreferrer" className="contact-link">LinkedIn</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Military Service Section */}
-      <section className="military">
-        <div className="section-container">
-          <h2>Military Service</h2>
-          <p>U.S. Army Veteran | 1st Battalion, 32nd Infantry Regiment, 10th Mountain Division</p>
-          <div className="military-patches">
-            {/* Unit patch images can be added here later */}
+          <p className="contact-intro">Open to opportunities, consulting inquiries, and security conversations.</p>
+          <div className="contact-methods">
+            <a href="/TylerWood_Resume.pdf" download className="contact-link">Download Resume</a>
+            <a href="mailto:tylerwood_8@outlook.com" className="contact-link">Email</a>
+            <a href="tel:+19183515161" className="contact-link">Phone</a>
+            <a href="https://www.linkedin.com/in/tyler-wood-cyber" target="_blank" rel="noopener noreferrer" className="contact-link">LinkedIn</a>
           </div>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="footer">
-        <div className="section-container">
-          <p>&copy; 2026 Tyler Wood. All rights reserved.</p>
-        </div>
+        <p>&copy; 2026 Tyler Wood. All rights reserved.</p>
       </footer>
     </div>
   )
