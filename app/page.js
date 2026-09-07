@@ -115,19 +115,19 @@ export default function Home() {
           <div className="stats-grid">
             <div className="stat-card">
               <p className="stat-number">14+</p>
-              <p className="stat-label">Years in Cybersecurity</p>
+              <p className="stat-label">Years Experience</p>
             </div>
             <div className="stat-card">
-              <p className="stat-number">5+</p>
-              <p className="stat-label">Team Members Led</p>
+              <p className="stat-number">Enterprise</p>
+              <p className="stat-label">Security Leader</p>
             </div>
             <div className="stat-card">
-              <p className="stat-number">100+</p>
-              <p className="stat-label">Incident Responses</p>
+              <p className="stat-number">SIEM/EDR/XDR</p>
+              <p className="stat-label">Expert</p>
             </div>
             <div className="stat-card">
-              <p className="stat-number">4</p>
-              <p className="stat-label">Major Platforms</p>
+              <p className="stat-number">Cloud & OT</p>
+              <p className="stat-label">Specialist</p>
             </div>
           </div>
         </div>
