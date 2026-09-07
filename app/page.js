@@ -105,7 +105,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h1>Cybersecurity Leader</h1>
+          <h1>Cybersecurity Leader <span className="veteran-badge">| U.S. Army Veteran</span></h1>
           <p className="tagline">14+ years spanning U.S. Army Tactical Signal Support to enterprise security operations. Veteran-driven. Results-oriented. Building scalable security at AAON.</p>
           <div className="hero-cta">
             <a href="#contact" className="cta-button">Get in Touch</a>
@@ -120,9 +120,9 @@ export default function Home() {
           <div className="about-grid">
             <div className="about-content">
               <h2>About</h2>
-              <p>I'm a security leader with 14+ years of experience progressing from U.S. Army Tactical Signal Support through DoD network operations to enterprise security leadership at AAON.</p>
+              <p>I'm a security leader with 14+ years of experience progressing from U.S. Army Tactical Signal Support through DoD network operations to enterprise security leadership.</p>
               <p>I drive security operations, governance, and team development. My focus is on delivering scalable, risk-aligned security solutions that support organizational growth and operational resilience.</p>
-              <p>Currently Cybersecurity Supervisor at AAON, leading security teams across enterprise, cloud, identity, and OT environments. I'm passionate about building mature security operations, developing talent, and translating complex security into business value.</p>
+              <p>I lead cross-functional security teams across enterprise, cloud, identity, and OT environments. I'm passionate about security operations excellence, developing talent, and translating complex security into business value.</p>
               
               <div className="credentials">
                 <div className="credential">
@@ -196,6 +196,17 @@ export default function Home() {
               <a href="tel:+19183515161" className="contact-link">(918) 351-5161</a>
               <a href="https://www.linkedin.com/in/tyler-wood-cyber" target="_blank" rel="noopener noreferrer" className="contact-link">LinkedIn</a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Military Service Section */}
+      <section className="military">
+        <div className="section-container">
+          <h2>Military Service</h2>
+          <p>U.S. Army Veteran | 1st Battalion, 32nd Infantry Regiment, 10th Mountain Division</p>
+          <div className="military-patches">
+            {/* Unit patch images can be added here later */}
           </div>
         </div>
       </section>
