@@ -114,10 +114,6 @@ export default function Home() {
         <div className="section-container">
           <div className="stats-grid">
             <div className="stat-card">
-              <p className="stat-number">14+</p>
-              <p className="stat-label">Years Experience</p>
-            </div>
-            <div className="stat-card">
               <p className="stat-number">Enterprise</p>
               <p className="stat-label">Security Leader</p>
             </div>
