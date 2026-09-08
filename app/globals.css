@@ -95,34 +95,8 @@ a:hover {
 .site-wrapper {
   min-height: 100vh;
   background: linear-gradient(180deg, #0f172a 0%, #0a0f1a 100%);
-  position: relative;
-  overflow-x: hidden;
-}
-
-.site-wrapper::before {
-  content: '';
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 2px;
-  height: 100%;
-  background: #14b8a6;
-  opacity: 0.6;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.site-wrapper::after {
-  content: '';
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 2px;
-  height: 100%;
-  background: #14b8a6;
-  opacity: 0.6;
-  z-index: 1;
-  pointer-events: none;
+  border-left: 2px solid rgba(20, 184, 166, 0.6);
+  border-right: 2px solid rgba(20, 184, 166, 0.6);
 }
 
 /* Header */
@@ -134,31 +108,7 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 1000;
-  overflow: hidden;
-}
-
-.header::before {
-  content: '<';
-  position: absolute;
-  top: 0.5rem;
-  left: 0.5rem;
-  font-size: 20px;
-  color: rgba(20, 184, 166, 0.08);
-  font-family: monospace;
-  font-weight: bold;
-  pointer-events: none;
-}
-
-.header::after {
-  content: '>';
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  font-size: 20px;
-  color: rgba(20, 184, 166, 0.08);
-  font-family: monospace;
-  font-weight: bold;
-  pointer-events: none;
+  position: relative;
 }
 
 .nav-container {
@@ -588,32 +538,6 @@ a:hover {
   color: #64748b;
   font-size: 12px;
   margin-top: 2rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.footer::before {
-  content: '<';
-  position: absolute;
-  bottom: 0.5rem;
-  left: 0.5rem;
-  font-size: 20px;
-  color: rgba(20, 184, 166, 0.08);
-  font-family: monospace;
-  font-weight: bold;
-  pointer-events: none;
-}
-
-.footer::after {
-  content: '>';
-  position: absolute;
-  bottom: 0.5rem;
-  right: 0.5rem;
-  font-size: 20px;
-  color: rgba(20, 184, 166, 0.08);
-  font-family: monospace;
-  font-weight: bold;
-  pointer-events: none;
 }
 
 .footer p {
