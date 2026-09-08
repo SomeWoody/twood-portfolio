@@ -83,10 +83,6 @@ export default function Home() {
 
   return (
     <div className="site-wrapper">
-      {/* Decorative Side Glows */}
-      <div className="side-glow side-glow-left"></div>
-      <div className="side-glow side-glow-right"></div>
-
       {/* Header */}
       <header className="header" role="banner">
         <nav className="nav-container" role="navigation" aria-label="Main navigation">
@@ -104,7 +100,7 @@ export default function Home() {
         <div className="hero-content">
           <h1>Cybersecurity Leader</h1>
           <p className="location">📍 Tulsa, Oklahoma</p>
-          <p className="tagline">From military communications and network operations to enterprise security leadership. 14+ years building scalable, resilient security operations that drive business impact. Veteran-driven approach to solving complex security challenges at scale.</p>
+          <p className="tagline">From military communications and network operations to enterprise security leadership. 10 years building scalable, resilient security operations that drive business impact. Veteran-driven approach to solving complex security challenges at scale.</p>
           <div className="hero-cta">
             <a href="#contact" className="cta-button">Download Resume</a>
             <a href="#experience" className="cta-secondary">View Experience</a>

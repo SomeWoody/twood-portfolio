@@ -2,7 +2,7 @@ import './globals.css'
 
 export const metadata = {
   title: 'Tyler Wood | Enterprise Cybersecurity Leader | Tulsa, Oklahoma',
-  description: 'Enterprise cybersecurity leader with 14+ years building and scaling security operations from military communications and network operations to enterprise-wide security programs. Expertise spans security operations, threat detection, incident response, security governance, team leadership, and strategic risk management across enterprise, cloud, and OT environments.',
+  description: 'Enterprise cybersecurity leader with 10 years building and scaling security operations from military communications and network operations to enterprise-wide security programs. Expertise spans security operations, threat detection, incident response, security governance, team leadership, and strategic risk management across enterprise, cloud, and OT environments.',
   keywords: 'cybersecurity leader, enterprise security, security operations, SIEM, EDR, XDR, Cortex, Palo Alto, firewalls, CyberArk, PAM, EPM, cloud security, Azure, incident response, threat detection, OT security, IoT security, penetration testing, security audit, vulnerability management, security governance, team leadership, remote cybersecurity, nationwide, Tulsa, Dallas, Austin, Houston, Denver, Chicago, Phoenix, Atlanta, New York, San Francisco, Los Angeles, Seattle, Boston, Charlotte, Miami, Minneapolis, Kansas City, Oklahoma City',
   authors: [{ name: 'Tyler Wood' }],
   creator: 'Tyler Wood',
