@@ -95,8 +95,54 @@ a:hover {
 .site-wrapper {
   min-height: 100vh;
   background: linear-gradient(180deg, #0f172a 0%, #0a0f1a 100%);
-  border-left: 2px solid rgba(20, 184, 166, 0.6);
-  border-right: 2px solid rgba(20, 184, 166, 0.6);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.site-wrapper::before {
+  content: '';
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background: radial-gradient(circle at 20% 50%, rgba(20, 184, 166, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 80% 80%, rgba(20, 184, 166, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+  animation: flowLeft 20s ease-in-out infinite;
+}
+
+.site-wrapper::after {
+  content: '';
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background: radial-gradient(circle at 80% 50%, rgba(20, 184, 166, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 20% 20%, rgba(20, 184, 166, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+  animation: flowRight 20s ease-in-out infinite;
+}
+
+@keyframes flowLeft {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes flowRight {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
 }
 
 /* Header */
@@ -107,8 +153,7 @@ a:hover {
   padding: 1rem 0;
   position: sticky;
   top: 0;
-  z-index: 1000;
-  position: relative;
+  z-index: 100;
 }
 
 .nav-container {
@@ -152,6 +197,11 @@ a:hover {
   background: linear-gradient(135deg, #0f172a 0%, #1a2d48 100%);
   padding: 3rem 1.5rem;
   text-align: left;
+  position: relative;
+  z-index: 1;
+  border-top: 3px solid transparent;
+  border-image: linear-gradient(90deg, #14b8a6 0%, rgba(20, 184, 166, 0) 100%) 1;
+  box-shadow: inset 0 1px 0 rgba(20, 184, 166, 0.2);
 }
 
 .hero-content {
@@ -204,12 +254,13 @@ a:hover {
 .cta-button {
   background: #14b8a6;
   color: #0f172a;
+  box-shadow: 0 0 20px rgba(20, 184, 166, 0.3);
 }
 
 .cta-button:hover {
   background: #0d9488;
   transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(20, 184, 166, 0.2);
+  box-shadow: 0 0 30px rgba(20, 184, 166, 0.5), 0 8px 16px rgba(20, 184, 166, 0.2);
 }
 
 .cta-secondary {
@@ -227,6 +278,8 @@ a:hover {
   background: #0f172a;
   padding: 2rem 1.5rem;
   border-top: 1px solid rgba(20, 184, 166, 0.1);
+  position: relative;
+  z-index: 1;
 }
 
 .stats-grid {
@@ -286,6 +339,8 @@ a:hover {
   background: #0f172a;
   padding: 2rem 1.5rem;
   border-top: 1px solid rgba(20, 184, 166, 0.1);
+  position: relative;
+  z-index: 1;
 }
 
 .about-grid {
@@ -359,6 +414,8 @@ a:hover {
   background: #0f172a;
   padding: 2rem 1.5rem;
   border-top: 1px solid rgba(20, 184, 166, 0.1);
+  position: relative;
+  z-index: 1;
 }
 
 .experience-item {
@@ -434,6 +491,8 @@ a:hover {
   background: #0f172a;
   padding: 2rem 1.5rem;
   border-top: 1px solid rgba(20, 184, 166, 0.1);
+  position: relative;
+  z-index: 1;
 }
 
 .skills-grid {
@@ -483,6 +542,8 @@ a:hover {
   padding: 2rem 1.5rem;
   border-top: 1px solid rgba(20, 184, 166, 0.1);
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .contact h2 {
