@@ -83,6 +83,10 @@ export default function Home() {
 
   return (
     <div className="site-wrapper">
+      {/* Decorative Side Glows */}
+      <div className="side-glow side-glow-left"></div>
+      <div className="side-glow side-glow-right"></div>
+
       {/* Header */}
       <header className="header" role="banner">
         <nav className="nav-container" role="navigation" aria-label="Main navigation">
