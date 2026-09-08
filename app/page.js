@@ -69,7 +69,7 @@ export default function Home() {
   ]
 
   const skills = [
-    { name: 'SIEM & EDR/XDR', icon: '🛡️' },
+    { name: 'SIEM, EDR, XDR Solutions', icon: '🛡️' },
     { name: 'Incident Response', icon: '🔍' },
     { name: 'Cloud Security', icon: '☁️' },
     { name: 'OT/IoT Security', icon: '⚙️' },
@@ -78,8 +78,7 @@ export default function Home() {
     { name: 'Vulnerability Management', icon: '⚠️' },
     { name: 'Identity & Access', icon: '🔐' },
     { name: 'Security Governance', icon: '📋' },
-    { name: 'Threat Detection', icon: '🎯' },
-    { name: 'Vendor Management', icon: '🤝' }
+    { name: 'Threat Detection', icon: '🎯' }
   ]
 
   return (
