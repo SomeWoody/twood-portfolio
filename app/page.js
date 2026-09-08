@@ -83,62 +83,6 @@ export default function Home() {
 
   return (
     <div className="site-wrapper">
-      {/* Left Circuit Pattern */}
-      <svg className="circuit-pattern circuit-left" viewBox="0 0 200 800" preserveAspectRatio="none">
-        <defs>
-          <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" style={{stopColor: 'rgba(20, 184, 166, 0)', stopOpacity: 0}} />
-            <stop offset="50%" style={{stopColor: 'rgba(20, 184, 166, 0.6)', stopOpacity: 1}} />
-            <stop offset="100%" style={{stopColor: 'rgba(20, 184, 166, 0)', stopOpacity: 0}} />
-          </linearGradient>
-        </defs>
-        {/* Horizontal lines */}
-        <line x1="0" y1="100" x2="150" y2="100" stroke="url(#lineGradient)" strokeWidth="2" className="circuit-line" />
-        <line x1="0" y1="200" x2="180" y2="200" stroke="url(#lineGradient)" strokeWidth="2" className="circuit-line" style={{animationDelay: '0.5s'}} />
-        <line x1="0" y1="300" x2="160" y2="300" stroke="url(#lineGradient)" strokeWidth="2" className="circuit-line" style={{animationDelay: '1s'}} />
-        <line x1="0" y1="400" x2="140" y2="400" stroke="url(#lineGradient)" strokeWidth="2" className="circuit-line" style={{animationDelay: '1.5s'}} />
-        <line x1="0" y1="500" x2="170" y2="500" stroke="url(#lineGradient)" strokeWidth="2" className="circuit-line" style={{animationDelay: '0.2s'}} />
-        <line x1="0" y1="600" x2="155" y2="600" stroke="url(#lineGradient)" strokeWidth="2" className="circuit-line" style={{animationDelay: '0.8s'}} />
-        <line x1="0" y1="700" x2="165" y2="700" stroke="url(#lineGradient)" strokeWidth="2" className="circuit-line" style={{animationDelay: '1.2s'}} />
-        
-        {/* Dots */}
-        <circle cx="60" cy="100" r="4" fill="rgba(20, 184, 166, 0.8)" className="circuit-dot" />
-        <circle cx="100" cy="150" r="3" fill="rgba(20, 184, 166, 0.6)" className="circuit-dot" style={{animationDelay: '0.3s'}} />
-        <circle cx="90" cy="200" r="4" fill="rgba(20, 184, 166, 0.7)" className="circuit-dot" style={{animationDelay: '0.6s'}} />
-        <circle cx="70" cy="300" r="3" fill="rgba(20, 184, 166, 0.5)" className="circuit-dot" style={{animationDelay: '1.1s'}} />
-        <circle cx="110" cy="400" r="4" fill="rgba(20, 184, 166, 0.8)" className="circuit-dot" style={{animationDelay: '0.4s'}} />
-        <circle cx="85" cy="500" r="3" fill="rgba(20, 184, 166, 0.6)" className="circuit-dot" style={{animationDelay: '0.9s'}} />
-        <circle cx="95" cy="600" r="4" fill="rgba(20, 184, 166, 0.7)" className="circuit-dot" style={{animationDelay: '1.3s'}} />
-      </svg>
-
-      {/* Right Circuit Pattern */}
-      <svg className="circuit-pattern circuit-right" viewBox="0 0 200 800" preserveAspectRatio="none">
-        <defs>
-          <linearGradient id="lineGradient2" x1="100%" y1="0%" x2="0%" y2="0%">
-            <stop offset="0%" style={{stopColor: 'rgba(20, 184, 166, 0)', stopOpacity: 0}} />
-            <stop offset="50%" style={{stopColor: 'rgba(20, 184, 166, 0.6)', stopOpacity: 1}} />
-            <stop offset="100%" style={{stopColor: 'rgba(20, 184, 166, 0)', stopOpacity: 0}} />
-          </linearGradient>
-        </defs>
-        {/* Horizontal lines */}
-        <line x1="200" y1="120" x2="50" y2="120" stroke="url(#lineGradient2)" strokeWidth="2" className="circuit-line" style={{animationDelay: '0.4s'}} />
-        <line x1="200" y1="220" x2="30" y2="220" stroke="url(#lineGradient2)" strokeWidth="2" className="circuit-line" style={{animationDelay: '0.9s'}} />
-        <line x1="200" y1="320" x2="60" y2="320" stroke="url(#lineGradient2)" strokeWidth="2" className="circuit-line" style={{animationDelay: '1.4s'}} />
-        <line x1="200" y1="420" x2="45" y2="420" stroke="url(#lineGradient2)" strokeWidth="2" className="circuit-line" style={{animationDelay: '0.6s'}} />
-        <line x1="200" y1="520" x2="65" y2="520" stroke="url(#lineGradient2)" strokeWidth="2" className="circuit-line" style={{animationDelay: '1.1s'}} />
-        <line x1="200" y1="620" x2="55" y2="620" stroke="url(#lineGradient2)" strokeWidth="2" className="circuit-line" style={{animationDelay: '0.7s'}} />
-        <line x1="200" y1="720" x2="70" y2="720" stroke="url(#lineGradient2)" strokeWidth="2" className="circuit-line" style={{animationDelay: '1.5s'}} />
-        
-        {/* Dots */}
-        <circle cx="140" cy="120" r="4" fill="rgba(20, 184, 166, 0.8)" className="circuit-dot" style={{animationDelay: '0.2s'}} />
-        <circle cx="100" cy="170" r="3" fill="rgba(20, 184, 166, 0.6)" className="circuit-dot" style={{animationDelay: '0.7s'}} />
-        <circle cx="110" cy="220" r="4" fill="rgba(20, 184, 166, 0.7)" className="circuit-dot" style={{animationDelay: '1.2s'}} />
-        <circle cx="130" cy="320" r="3" fill="rgba(20, 184, 166, 0.5)" className="circuit-dot" style={{animationDelay: '0.5s'}} />
-        <circle cx="90" cy="420" r="4" fill="rgba(20, 184, 166, 0.8)" className="circuit-dot" style={{animationDelay: '1s'}} />
-        <circle cx="115" cy="520" r="3" fill="rgba(20, 184, 166, 0.6)" className="circuit-dot" style={{animationDelay: '0.3s'}} />
-        <circle cx="105" cy="620" r="4" fill="rgba(20, 184, 166, 0.7)" className="circuit-dot" style={{animationDelay: '0.8s'}} />
-      </svg>
-
       {/* Header */}
       <header className="header" role="banner">
         <nav className="nav-container" role="navigation" aria-label="Main navigation">
@@ -156,7 +100,7 @@ export default function Home() {
         <div className="hero-content">
           <h1>Cybersecurity Leader</h1>
           <p className="location">📍 Tulsa, Oklahoma</p>
-          <p className="tagline">From military communications and network operations to enterprise security leadership. 10 years building scalable, resilient security operations that drive business impact. Veteran-driven approach to solving complex security challenges at scale.</p>
+          <p className="tagline">From military communications and network operations to enterprise security leadership. 14+ years building scalable, resilient security operations that drive business impact. Veteran-driven approach to solving complex security challenges at scale.</p>
           <div className="hero-cta">
             <a href="#contact" className="cta-button">Download Resume</a>
             <a href="#experience" className="cta-secondary">View Experience</a>
