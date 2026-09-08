@@ -101,6 +101,7 @@ export default function Home() {
       <section className="hero">
         <div className="hero-content">
           <h1>Cybersecurity Leader</h1>
+          <p className="location">📍 Tulsa, Oklahoma</p>
           <p className="tagline">14+ years spanning U.S. Army Tactical Signal Support to enterprise security operations. Veteran-driven. Results-oriented. Building scalable security at scale.</p>
           <div className="hero-cta">
             <a href="#contact" className="cta-button">Download Resume</a>
