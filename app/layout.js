@@ -16,9 +16,9 @@ export const metadata = {
     locale: 'en_US',
     images: [
       {
-        url: 'https://twood.org/photo.jpg',
-        width: 300,
-        height: 300,
+        url: 'https://twood.org/og-image.svg',
+        width: 1200,
+        height: 630,
         alt: 'Tyler Wood - Enterprise Cybersecurity Leader',
       },
     ],
