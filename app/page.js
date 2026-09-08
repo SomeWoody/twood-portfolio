@@ -102,7 +102,7 @@ export default function Home() {
         <div className="hero-content">
           <h1>Cybersecurity Leader</h1>
           <p className="location">📍 Tulsa, Oklahoma</p>
-          <p className="tagline">14+ years spanning U.S. Army Tactical Signal Support to enterprise security operations. Veteran-driven. Results-oriented. Building scalable security at scale.</p>
+          <p className="tagline">From military communications and network operations to enterprise security leadership. 14+ years building scalable, resilient security operations that drive business impact. Veteran-driven approach to solving complex security challenges at scale.</p>
           <div className="hero-cta">
             <a href="#contact" className="cta-button">Download Resume</a>
             <a href="#experience" className="cta-secondary">View Experience</a>
@@ -116,15 +116,15 @@ export default function Home() {
           <div className="stats-grid">
             <div className="stat-card">
               <p className="stat-number">Enterprise</p>
-              <p className="stat-label">Security Leader</p>
+              <p className="stat-label">Security Leadership</p>
             </div>
             <div className="stat-card">
-              <p className="stat-number">SIEM/EDR/XDR</p>
-              <p className="stat-label">Expert</p>
+              <p className="stat-number">Security Operations</p>
+              <p className="stat-label">Risk Management</p>
             </div>
             <div className="stat-card">
-              <p className="stat-number">Cloud & OT</p>
-              <p className="stat-label">Specialist</p>
+              <p className="stat-number">Enterprise & OT</p>
+              <p className="stat-label">Infrastructure</p>
             </div>
           </div>
         </div>
