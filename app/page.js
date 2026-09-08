@@ -200,8 +200,8 @@ export default function Home() {
           <p className="contact-intro">Open to opportunities, consulting inquiries, and security conversations.</p>
           <div className="contact-methods">
             <a href="/TylerWood_Resume.pdf" download className="contact-link" aria-label="Download resume PDF">Download Resume</a>
-            <a href="mailto:tylerwood_8@outlook.com" className="contact-link" aria-label="Send email to tylerwood_8@outlook.com">Email</a>
-            <a href="tel:+19183515161" className="contact-link" aria-label="Call phone number">Phone</a>
+            <a href="mailto:tylerwood_8@outlook.com" className="contact-link" aria-label="Send email to tylerwood_8@outlook.com">tylerwood_8@outlook.com</a>
+            <a href="tel:+19183515161" className="contact-link" aria-label="Call phone number">(918) 351-5161</a>
             <a href="https://www.linkedin.com/in/tyler-wood-cyber" target="_blank" rel="noopener noreferrer" className="contact-link" aria-label="Visit LinkedIn profile">LinkedIn</a>
           </div>
         </div>
