@@ -100,7 +100,7 @@ export default function Home() {
         <div className="hero-content">
           <h1>Cybersecurity Leader</h1>
           <p className="location">📍 Tulsa, Oklahoma</p>
-          <p className="tagline">From military communications and network operations to enterprise security leadership. 14+ years building scalable, resilient security operations that drive business impact. Veteran-driven approach to solving complex security challenges at scale.</p>
+          <p className="tagline">From military communications and network operations to enterprise security leadership. 10 years building scalable, resilient security operations that drive business impact. Veteran-driven approach to solving complex security challenges at scale.</p>
           <div className="hero-cta">
             <a href="#contact" className="cta-button">Download Resume</a>
             <a href="#experience" className="cta-secondary">View Experience</a>
@@ -134,7 +134,7 @@ export default function Home() {
           <h2>About</h2>
           <div className="about-grid">
             <div>
-              <p>I'm a security leader with 14+ years of experience progressing from U.S. Army Tactical Signal Support through DoD network operations to enterprise security leadership.</p>
+              <p>I'm a security leader with 10 years of experience progressing from U.S. Army Tactical Signal Support through DoD network operations to enterprise security leadership.</p>
               <p>I drive security operations, governance, and team development. My focus is on delivering scalable, risk-aligned security solutions that support organizational growth and operational resilience.</p>
               <p>I lead cross-functional security teams across enterprise, cloud, identity, and OT environments. Passionate about security operations excellence, developing talent, and translating complex security into business value.</p>
               <div className="education-box">

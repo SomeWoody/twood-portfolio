@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Tyler Wood | Enterprise Cybersecurity Leader',
-    description: 'Building resilient, scalable security operations that drive business impact. 14+ years enterprise leadership.',
+    description: 'Building resilient, scalable security operations that drive business impact. 10 years enterprise leadership.',
   },
   robots: 'index, follow',
 }
