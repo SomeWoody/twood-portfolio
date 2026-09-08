@@ -73,7 +73,6 @@ export default function Home() {
     { name: 'Incident Response', icon: '🔍' },
     { name: 'Cloud Security', icon: '☁️' },
     { name: 'OT/IoT Security', icon: '⚙️' },
-    { name: 'Cortex XDR/XSIAM', icon: '🔧' },
     { name: 'Team Leadership', icon: '👥' },
     { name: 'Network Security', icon: '🌐' },
     { name: 'Vulnerability Management', icon: '⚠️' },
@@ -86,19 +85,19 @@ export default function Home() {
   return (
     <div className="site-wrapper">
       {/* Header */}
-      <header className="header">
-        <nav className="nav-container">
+      <header className="header" role="banner">
+        <nav className="nav-container" role="navigation" aria-label="Main navigation">
           <div className="logo">Tyler Wood</div>
           <div className="nav-links">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
+            <a href="#about" aria-label="Navigate to about section">About</a>
+            <a href="#experience" aria-label="Navigate to experience section">Experience</a>
+            <a href="#contact" aria-label="Navigate to contact section">Contact</a>
           </div>
         </nav>
       </header>
 
       {/* Hero */}
-      <section className="hero">
+      <section className="hero" role="main">
         <div className="hero-content">
           <h1>Cybersecurity Leader</h1>
           <p className="location">📍 Tulsa, Oklahoma</p>
@@ -146,7 +145,7 @@ export default function Home() {
               </div>
             </div>
             <div className="about-image">
-              <img src="/photo.jpg" alt="Tyler Wood" />
+              <img src="/photo.jpg" alt="Tyler Wood - Enterprise Cybersecurity Leader from Tulsa, Oklahoma" loading="lazy" />
             </div>
           </div>
         </div>
@@ -201,16 +200,16 @@ export default function Home() {
           <h2>Get In Touch</h2>
           <p className="contact-intro">Open to opportunities, consulting inquiries, and security conversations.</p>
           <div className="contact-methods">
-            <a href="/TylerWood_Resume.pdf" download className="contact-link">Download Resume</a>
-            <a href="mailto:tylerwood_8@outlook.com" className="contact-link">Email</a>
-            <a href="tel:+19183515161" className="contact-link">Phone</a>
-            <a href="https://www.linkedin.com/in/tyler-wood-cyber" target="_blank" rel="noopener noreferrer" className="contact-link">LinkedIn</a>
+            <a href="/TylerWood_Resume.pdf" download className="contact-link" aria-label="Download resume PDF">Download Resume</a>
+            <a href="mailto:tylerwood_8@outlook.com" className="contact-link" aria-label="Send email to tylerwood_8@outlook.com">Email</a>
+            <a href="tel:+19183515161" className="contact-link" aria-label="Call phone number">Phone</a>
+            <a href="https://www.linkedin.com/in/tyler-wood-cyber" target="_blank" rel="noopener noreferrer" className="contact-link" aria-label="Visit LinkedIn profile">LinkedIn</a>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="footer">
+      <footer className="footer" role="contentinfo">
         <p>&copy; 2026 Tyler Wood. All rights reserved.</p>
       </footer>
     </div>

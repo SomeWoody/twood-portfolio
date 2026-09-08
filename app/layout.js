@@ -14,6 +14,14 @@ export const metadata = {
     siteName: 'Tyler Wood Cybersecurity',
     type: 'website',
     locale: 'en_US',
+    images: [
+      {
+        url: 'https://twood.org/photo.jpg',
+        width: 300,
+        height: 300,
+        alt: 'Tyler Wood - Enterprise Cybersecurity Leader',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
